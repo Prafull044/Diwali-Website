@@ -4,18 +4,18 @@ import { TRANSLATIONS } from '../data/translations';
 import { setMuted, getMuted, toggleAmbientMusic, isAmbientMusicActive } from '../utils/soundEffects';
 
 export const AVAILABLE_THEMES = [
-  { id: 'crimson-gold', name: 'Shahi Crimson & Gold', desc: 'शाही सिन्दूर व सुवर्ण', primaryDot: '#991B1B', accentDot: '#FFD25A' },
-  { id: 'peacock-navy', name: 'Midnight Peacock & Gold', desc: 'मयूर नील व सुवर्ण', primaryDot: '#0F2042', accentDot: '#FFD166' },
-  { id: 'saffron-amber', name: 'Vedic Saffron & Amber', desc: 'केसरिया व जाफरानी', primaryDot: '#4D1D08', accentDot: '#FFC043' },
-  { id: 'emerald-marigold', name: 'Royal Emerald & Marigold', desc: 'पन्ना व गेंदा', primaryDot: '#0B3B24', accentDot: '#F9C74F' },
-  { id: 'royal-purple', name: 'Classic Purple & Gold', desc: 'शाही बैंगनी व सुवर्ण', primaryDot: '#241039', accentDot: '#F5C75E' },
+  { id: 'luminous-gold', name: 'Luminous Gold & Ivory', desc: 'प्रकाशमय सुवर्ण व मोतिया', primaryDot: '#FAF8F5', accentDot: '#D97706' },
+  { id: 'rose-crimson', name: 'Rose Pearl & Crimson', desc: 'गुलाबी मोती व सिन्दूर', primaryDot: '#FFF8F7', accentDot: '#E11D48' },
+  { id: 'peacock-pearl', name: 'Peacock Pearl & Teal', desc: 'मयूर नील व मुक्ता', primaryDot: '#F4F9F8', accentDot: '#0D9488' },
+  { id: 'saffron-sunlight', name: 'Saffron Amber Sunlight', desc: 'केसरिया प्रभात व अंबर', primaryDot: '#FFFBF2', accentDot: '#EA580C' },
+  { id: 'midnight-royal', name: 'Midnight Royal (Dark)', desc: 'निशीथ रात्रि व दीप', primaryDot: '#1F0D36', accentDot: '#F5C75E' },
 ];
 
 const AppContext = createContext();
 
 export function AppProvider({ children }) {
   const [language, setLanguage] = useLocalStorage('diwali_lang', 'en');
-  const [theme, setTheme] = useLocalStorage('diwali_theme', 'crimson-gold');
+  const [theme, setTheme] = useLocalStorage('diwali_theme', 'luminous-gold');
   const [soundEnabled, setSoundEnabled] = useLocalStorage('diwali_sound_enabled', true);
   const [ambientPlaying, setAmbientPlaying] = useState(false);
   const [hasCompletedIntro, setHasCompletedIntro] = useLocalStorage('diwali_intro_seen', false);

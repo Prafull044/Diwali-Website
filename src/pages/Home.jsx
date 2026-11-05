@@ -169,17 +169,17 @@ export default function Home({ onOpenFireworksIntro }) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/diya-studio"
-              className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-[#F5C75E] to-[#F28C28] text-[#160B26] font-bold text-base shadow-[0_0_25px_rgba(245,199,94,0.5)] hover:scale-105 active:scale-95 transition flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-[#F5C75E] to-[#F28C28] !text-white font-bold text-base shadow-[0_4px_20px_rgba(245,158,11,0.35)] hover:scale-105 active:scale-95 transition flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>{t.hero.startCelebrating}</span>
-              <Sparkles className="w-4 h-4" />
+              <Sparkles className="w-4 h-4 text-white" />
             </Link>
 
             <Link
               to="/fireworks-arena"
-              className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#241039] border border-[#F5C75E]/50 text-[#F5C75E] hover:bg-[#160B26] font-bold text-base transition flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white border border-amber-400/60 text-amber-900 hover:bg-amber-50 font-bold text-base shadow-sm transition flex items-center justify-center gap-2 cursor-pointer"
             >
-              <Bomb className="w-4 h-4" />
+              <Bomb className="w-4 h-4 text-amber-600" />
               <span>{t.hero.launchFireworks}</span>
             </Link>
           </div>

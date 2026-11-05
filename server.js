@@ -80,3 +80,4 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, '0.0.0.0', () => {
   console.log(`✨ Diwali Magic Server running on http://0.0.0.0:${PORT}`);
 });
+

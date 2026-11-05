@@ -266,10 +266,10 @@ export default function FireworksArena() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-[#FFF4DD] pb-16">
+    <div className="min-h-screen bg-[#160B26] text-[#FFF4DD] pb-16">
       
       {/* Page Header */}
-      <div className="bg-gradient-to-b from-[#160B26] to-[#050505] border-b border-[#F5C75E]/20 py-8 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-b from-[#241039] to-[#160B26] border-b border-[#F5C75E]/20 py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#241039] border border-[#F5C75E]/30 text-[#F5C75E] text-xs font-semibold uppercase tracking-wider mb-2">

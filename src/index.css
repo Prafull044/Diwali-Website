@@ -1,80 +1,109 @@
 @import "tailwindcss";
 
 @layer base {
-  /* THEME 1: SHAHI CRIMSON & GOLD (DEFAULT - Auspicious Kumkum Ruby & Pure Radiance) */
-  :root, [data-theme="crimson-gold"] {
-    --theme-bg-main: #180307;
-    --theme-bg-card: #28070E;
-    --theme-bg-card-hover: #3B0A14;
-    --theme-bg-gradient-mid: #22050B;
-    --theme-accent-gold: #FFD25A;
-    --theme-accent-secondary: #FF7B25;
-    --theme-text-cream: #FFF8E7;
-    --theme-border-gold: rgba(255, 210, 90, 0.35);
-    --theme-glow: rgba(255, 210, 90, 0.45);
+  /* =========================================================
+     THEME 1: LUMINOUS ROYAL GOLD & IVORY (ACTIVE DEFAULT)
+     Crisp, bright, warm, professional & festive
+     ========================================================= */
+  :root, [data-theme="luminous-gold"] {
+    --theme-bg-main: #FBF9F4;
+    --theme-bg-card: #FFFFFF;
+    --theme-bg-card-hover: #FFFDF9;
+    --theme-bg-gradient-mid: #F5EFE4;
+    --theme-accent-gold: #B45309;       /* Deep rich gold for sharp text contrast */
+    --theme-accent-gold-light: #D97706; /* Radiant metallic gold */
+    --theme-accent-secondary: #EA580C;  /* Warm festive saffron orange */
+    --theme-text-primary: #1C1917;      /* Deep espresso charcoal - crisp & legible */
+    --theme-text-secondary: #57534E;    /* Warm slate gray */
+    --theme-border-gold: rgba(180, 83, 9, 0.22);
+    --theme-border-subtle: rgba(0, 0, 0, 0.08);
+    --theme-surface-subtle: #F6F2EA;
+    --theme-glow: rgba(217, 119, 6, 0.2);
+    --theme-card-shadow: 0 10px 30px -5px rgba(180, 83, 9, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
   }
 
-  /* THEME 2: MIDNIGHT PEACOCK & KOHINOOR GOLD */
-  [data-theme="peacock-navy"] {
-    --theme-bg-main: #060B1A;
-    --theme-bg-card: #0D1733;
-    --theme-bg-card-hover: #15244D;
-    --theme-bg-gradient-mid: #091228;
-    --theme-accent-gold: #FFD166;
-    --theme-accent-secondary: #00B4D8;
-    --theme-text-cream: #F0F6FF;
-    --theme-border-gold: rgba(255, 209, 102, 0.35);
-    --theme-glow: rgba(255, 209, 102, 0.45);
+  /* THEME 2: ROSE PEARL & ROYAL CRIMSON */
+  [data-theme="rose-crimson"] {
+    --theme-bg-main: #FFF8F7;
+    --theme-bg-card: #FFFFFF;
+    --theme-bg-card-hover: #FFF3F2;
+    --theme-bg-gradient-mid: #FEECEB;
+    --theme-accent-gold: #9F1239;
+    --theme-accent-gold-light: #E11D48;
+    --theme-accent-secondary: #D97706;
+    --theme-text-primary: #1C1316;
+    --theme-text-secondary: #5C4A50;
+    --theme-border-gold: rgba(159, 18, 57, 0.22);
+    --theme-border-subtle: rgba(0, 0, 0, 0.08);
+    --theme-surface-subtle: #FCEAE9;
+    --theme-glow: rgba(225, 29, 72, 0.2);
+    --theme-card-shadow: 0 10px 30px -5px rgba(159, 18, 57, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
   }
 
-  /* THEME 3: VEDIC SAFFRON & ROYAL AMBER */
-  [data-theme="saffron-amber"] {
-    --theme-bg-main: #1C0902;
-    --theme-bg-card: #2F1105;
-    --theme-bg-card-hover: #401908;
-    --theme-bg-gradient-mid: #250D03;
-    --theme-accent-gold: #FFC043;
-    --theme-accent-secondary: #FF5400;
-    --theme-text-cream: #FFF5E4;
-    --theme-border-gold: rgba(255, 192, 67, 0.35);
-    --theme-glow: rgba(255, 192, 67, 0.45);
+  /* THEME 3: PEACOCK TEAL & PEARL */
+  [data-theme="peacock-pearl"] {
+    --theme-bg-main: #F4F9F8;
+    --theme-bg-card: #FFFFFF;
+    --theme-bg-card-hover: #EBF5F3;
+    --theme-bg-gradient-mid: #E5F0EE;
+    --theme-accent-gold: #0F766E;
+    --theme-accent-gold-light: #0D9488;
+    --theme-accent-secondary: #D97706;
+    --theme-text-primary: #131C1B;
+    --theme-text-secondary: #4A5957;
+    --theme-border-gold: rgba(15, 118, 110, 0.22);
+    --theme-border-subtle: rgba(0, 0, 0, 0.08);
+    --theme-surface-subtle: #E8F2F0;
+    --theme-glow: rgba(13, 148, 136, 0.2);
+    --theme-card-shadow: 0 10px 30px -5px rgba(15, 118, 110, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
   }
 
-  /* THEME 4: ROYAL EMERALD & MARIGOLD */
-  [data-theme="emerald-marigold"] {
-    --theme-bg-main: #05160E;
-    --theme-bg-card: #0C2B1C;
-    --theme-bg-card-hover: #133D29;
-    --theme-bg-gradient-mid: #081F14;
-    --theme-accent-gold: #F9C74F;
-    --theme-accent-secondary: #F3722C;
-    --theme-text-cream: #F4FBF7;
-    --theme-border-gold: rgba(249, 199, 79, 0.35);
-    --theme-glow: rgba(249, 199, 79, 0.45);
+  /* THEME 4: SAFFRON AMBER SUNLIGHT */
+  [data-theme="saffron-sunlight"] {
+    --theme-bg-main: #FFFBF2;
+    --theme-bg-card: #FFFFFF;
+    --theme-bg-card-hover: #FFF8E6;
+    --theme-bg-gradient-mid: #FDF1D5;
+    --theme-accent-gold: #C2410C;
+    --theme-accent-gold-light: #EA580C;
+    --theme-accent-secondary: #D97706;
+    --theme-text-primary: #221811;
+    --theme-text-secondary: #5E4E42;
+    --theme-border-gold: rgba(194, 65, 12, 0.22);
+    --theme-border-subtle: rgba(0, 0, 0, 0.08);
+    --theme-surface-subtle: #FBEFD0;
+    --theme-glow: rgba(234, 88, 12, 0.2);
+    --theme-card-shadow: 0 10px 30px -5px rgba(194, 65, 12, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
   }
 
-  /* THEME 5: CLASSIC ROYAL PURPLE & GOLD */
-  [data-theme="royal-purple"] {
-    --theme-bg-main: #160B26;
-    --theme-bg-card: #241039;
-    --theme-bg-card-hover: #331750;
-    --theme-bg-gradient-mid: #1A0B2E;
+  /* THEME 5: MIDNIGHT ROYAL (CLASSIC DARK) */
+  [data-theme="midnight-royal"] {
+    --theme-bg-main: #140824;
+    --theme-bg-card: #1F0D36;
+    --theme-bg-card-hover: #2B134A;
+    --theme-bg-gradient-mid: #1A0A30;
     --theme-accent-gold: #F5C75E;
+    --theme-accent-gold-light: #FFD573;
     --theme-accent-secondary: #F28C28;
-    --theme-text-cream: #FFF4DD;
+    --theme-text-primary: #FFF5E0;
+    --theme-text-secondary: #DAC9B0;
     --theme-border-gold: rgba(245, 199, 94, 0.35);
-    --theme-glow: rgba(245, 199, 94, 0.45);
+    --theme-border-subtle: rgba(255, 255, 255, 0.1);
+    --theme-surface-subtle: #17092B;
+    --theme-glow: rgba(245, 199, 94, 0.4);
+    --theme-card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
   }
 
   body {
     background-color: var(--theme-bg-main);
-    color: var(--theme-text-cream);
+    color: var(--theme-text-primary);
     font-family: 'Outfit', sans-serif;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    transition: background-color 0.35s ease, color 0.35s ease;
   }
 
   h1, h2, h3, .font-serif-heading {
     font-family: 'Playfair Display', serif;
+    letter-spacing: -0.015em;
   }
 
   .font-royal {
@@ -87,10 +116,10 @@
 }
 
 /* =========================================================
-   DYNAMIC PALETTE REMAPPING FOR WEBSITE ELEMENTS
+   INTELLIGENT UI REMAPPING FOR ATTRACTIVE, LIGHT & PROFESSIONAL DISPLAY
    ========================================================= */
 
-/* Deep Backgrounds */
+/* Main Site Backgrounds */
 .bg-\[\#160B26\] {
   background-color: var(--theme-bg-main) !important;
 }
@@ -104,30 +133,35 @@
   background-color: color-mix(in srgb, var(--theme-bg-main) 80%, transparent) !important;
 }
 .bg-\[\#160B26\]\/60 {
-  background-color: color-mix(in srgb, var(--theme-bg-main) 60%, transparent) !important;
+  background-color: color-mix(in srgb, var(--theme-surface-subtle) 80%, transparent) !important;
 }
 .bg-\[\#160B26\]\/50 {
-  background-color: color-mix(in srgb, var(--theme-bg-main) 50%, transparent) !important;
+  background-color: color-mix(in srgb, var(--theme-surface-subtle) 60%, transparent) !important;
 }
 .bg-\[\#10071C\], .bg-\[\#0E0517\] {
   background-color: var(--theme-bg-main) !important;
 }
 
-/* Cards & Elevated Containers */
+/* Cards & Elevated Surfaces */
 .bg-\[\#241039\] {
   background-color: var(--theme-bg-card) !important;
+  box-shadow: var(--theme-card-shadow);
 }
 .bg-\[\#241039\]\/95 {
   background-color: color-mix(in srgb, var(--theme-bg-card) 95%, transparent) !important;
+  box-shadow: var(--theme-card-shadow);
 }
 .bg-\[\#241039\]\/90 {
   background-color: color-mix(in srgb, var(--theme-bg-card) 90%, transparent) !important;
+  box-shadow: var(--theme-card-shadow);
 }
 .bg-\[\#241039\]\/85 {
   background-color: color-mix(in srgb, var(--theme-bg-card) 85%, transparent) !important;
+  box-shadow: var(--theme-card-shadow);
 }
 .bg-\[\#241039\]\/80 {
   background-color: color-mix(in srgb, var(--theme-bg-card) 80%, transparent) !important;
+  box-shadow: var(--theme-card-shadow);
 }
 .bg-\[\#241039\]\/70 {
   background-color: color-mix(in srgb, var(--theme-bg-card) 70%, transparent) !important;
@@ -136,21 +170,27 @@
   background-color: color-mix(in srgb, var(--theme-bg-card) 60%, transparent) !important;
 }
 .bg-\[\#241039\]\/50 {
-  background-color: color-mix(in srgb, var(--theme-bg-card) 50%, transparent) !important;
+  background-color: color-mix(in srgb, var(--theme-surface-subtle) 90%, transparent) !important;
 }
 
-/* Gradients */
+/* Secondary Inner Neutral Surfaces */
+.bg-black\/20, .bg-black\/30, .bg-black\/40, .bg-black\/50, .bg-black\/60 {
+  background-color: var(--theme-surface-subtle) !important;
+  border-color: var(--theme-border-subtle) !important;
+}
+
+/* Gradients for Hero & Highlights */
 .from-\[\#241039\] {
   --tw-gradient-from: var(--theme-bg-card) !important;
 }
 .to-\[\#241039\] {
   --tw-gradient-to: var(--theme-bg-card) !important;
 }
-.via-\[\#1A0B2E\], .via-\[\#1E0B36\], .via-\[\#3C125E\] {
+.via-\[\#1A0B2E\], .via-\[\#1E0B36\], .via-\[\#3C125E\], .via-\[\#2A1042\] {
   --tw-gradient-via: var(--theme-bg-gradient-mid) !important;
 }
 
-/* Texts */
+/* Crisp Text Hierarchy */
 .text-\[\#F5C75E\] {
   color: var(--theme-accent-gold) !important;
 }
@@ -158,22 +198,22 @@
   color: var(--theme-accent-secondary) !important;
 }
 .text-\[\#FFF4DD\] {
-  color: var(--theme-text-cream) !important;
+  color: var(--theme-text-primary) !important;
 }
 .text-\[\#FFF4DD\]\/85 {
-  color: color-mix(in srgb, var(--theme-text-cream) 85%, transparent) !important;
+  color: color-mix(in srgb, var(--theme-text-primary) 85%, transparent) !important;
 }
 .text-\[\#FFF4DD\]\/80 {
-  color: color-mix(in srgb, var(--theme-text-cream) 80%, transparent) !important;
+  color: color-mix(in srgb, var(--theme-text-primary) 80%, transparent) !important;
 }
 .text-\[\#FFF4DD\]\/70 {
-  color: color-mix(in srgb, var(--theme-text-cream) 70%, transparent) !important;
+  color: var(--theme-text-secondary) !important;
 }
 .text-\[\#FFF4DD\]\/60 {
-  color: color-mix(in srgb, var(--theme-text-cream) 60%, transparent) !important;
+  color: color-mix(in srgb, var(--theme-text-secondary) 85%, transparent) !important;
 }
 .text-\[\#FFF4DD\]\/50 {
-  color: color-mix(in srgb, var(--theme-text-cream) 50%, transparent) !important;
+  color: color-mix(in srgb, var(--theme-text-secondary) 70%, transparent) !important;
 }
 
 /* Borders */
@@ -181,36 +221,51 @@
   border-color: var(--theme-accent-gold) !important;
 }
 .border-\[\#F5C75E\]\/50 {
-  border-color: color-mix(in srgb, var(--theme-accent-gold) 50%, transparent) !important;
+  border-color: var(--theme-border-gold) !important;
 }
 .border-\[\#F5C75E\]\/40 {
-  border-color: color-mix(in srgb, var(--theme-accent-gold) 40%, transparent) !important;
+  border-color: var(--theme-border-gold) !important;
 }
 .border-\[\#F5C75E\]\/30 {
-  border-color: color-mix(in srgb, var(--theme-accent-gold) 30%, transparent) !important;
+  border-color: var(--theme-border-gold) !important;
 }
 .border-\[\#F5C75E\]\/25 {
-  border-color: color-mix(in srgb, var(--theme-accent-gold) 25%, transparent) !important;
+  border-color: var(--theme-border-gold) !important;
 }
 .border-\[\#F5C75E\]\/20 {
-  border-color: color-mix(in srgb, var(--theme-accent-gold) 20%, transparent) !important;
+  border-color: var(--theme-border-subtle) !important;
 }
 .border-\[\#F5C75E\]\/15 {
-  border-color: color-mix(in srgb, var(--theme-accent-gold) 15%, transparent) !important;
+  border-color: var(--theme-border-subtle) !important;
 }
 .border-\[\#F5C75E\]\/10 {
-  border-color: color-mix(in srgb, var(--theme-accent-gold) 10%, transparent) !important;
+  border-color: var(--theme-border-subtle) !important;
+}
+.border-white\/10, .border-white\/20, .border-white\/30, .border-white\/5 {
+  border-color: var(--theme-border-subtle) !important;
 }
 
-/* Button & Accent Gradients */
+/* Inputs & Form Elements on Clean Light Cards */
+input:not([type="range"]), select, textarea {
+  background-color: var(--theme-surface-subtle) !important;
+  color: var(--theme-text-primary) !important;
+  border-color: var(--theme-border-gold) !important;
+}
+input:not([type="range"]):focus, select:focus, textarea:focus {
+  background-color: #FFFFFF !important;
+  border-color: var(--theme-accent-gold) !important;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.12) !important;
+}
+
+/* Gradient Buttons - Radiant Festive Jewel Look */
 .from-\[\#F5C75E\] {
-  --tw-gradient-from: var(--theme-accent-gold) !important;
+  --tw-gradient-from: var(--theme-accent-gold-light) !important;
 }
 .to-\[\#F5C75E\] {
-  --tw-gradient-to: var(--theme-accent-gold) !important;
+  --tw-gradient-to: var(--theme-accent-gold-light) !important;
 }
 .via-\[\#F5C75E\] {
-  --tw-gradient-via: var(--theme-accent-gold) !important;
+  --tw-gradient-via: var(--theme-accent-gold-light) !important;
 }
 .from-\[\#F28C28\] {
   --tw-gradient-from: var(--theme-accent-secondary) !important;
@@ -222,13 +277,35 @@
   --tw-gradient-via: var(--theme-accent-secondary) !important;
 }
 
+/* Ensure Button Text is High Contrast and Sharp */
+a.bg-gradient-to-r,
+button.bg-gradient-to-r,
+.bg-gradient-to-r.text-\[\#160B26\] {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Secondary Button Contrast */
+button.bg-\[\#160B26\], a.bg-\[\#160B26\] {
+  background-color: var(--theme-bg-card) !important;
+  color: var(--theme-accent-gold) !important;
+  border-color: var(--theme-border-gold) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+button.bg-\[\#160B26\]:hover, a.bg-\[\#160B26\]:hover {
+  background-color: var(--theme-surface-subtle) !important;
+  border-color: var(--theme-accent-gold) !important;
+}
+
 /* Glow & Shadows */
 .gold-glow {
-  text-shadow: 0 0 10px var(--theme-glow), 0 0 20px rgba(255, 210, 90, 0.25);
+  text-shadow: 0 0 12px var(--theme-glow), 0 0 25px rgba(217, 119, 6, 0.15);
 }
 
 .gold-glow-box {
-  box-shadow: 0 0 18px var(--theme-glow), 0 0 35px rgba(255, 123, 37, 0.15);
+  box-shadow: var(--theme-card-shadow) !important;
+  border: 1px solid var(--theme-border-gold);
 }
 
 .gold-border {
@@ -237,7 +314,7 @@
 
 .gold-border-intense {
   border: 1.5px solid var(--theme-accent-gold);
-  box-shadow: 0 0 12px var(--theme-glow);
+  box-shadow: 0 4px 15px var(--theme-glow);
 }
 
 /* Diya Flame Animation */
@@ -245,22 +322,22 @@
   0%, 100% {
     transform: scale(1) rotate(-1deg);
     opacity: 0.95;
-    filter: drop-shadow(0 0 8px #FFD25A) drop-shadow(0 -5px 15px #FF7B25);
+    filter: drop-shadow(0 0 8px #F59E0B) drop-shadow(0 -5px 15px #EA580C);
   }
   25% {
     transform: scale(1.08, 0.94) rotate(1.5deg);
     opacity: 1;
-    filter: drop-shadow(0 0 12px #FFD25A) drop-shadow(0 -8px 20px #ff5100);
+    filter: drop-shadow(0 0 12px #F59E0B) drop-shadow(0 -8px 20px #DC2626);
   }
   50% {
     transform: scale(0.95, 1.05) rotate(-2deg);
     opacity: 0.9;
-    filter: drop-shadow(0 0 7px #FFD25A) drop-shadow(0 -4px 12px #FF7B25);
+    filter: drop-shadow(0 0 7px #F59E0B) drop-shadow(0 -4px 12px #EA580C);
   }
   75% {
     transform: scale(1.04, 0.98) rotate(1deg);
     opacity: 1;
-    filter: drop-shadow(0 0 14px #FFD25A) drop-shadow(0 -10px 22px #ff4500);
+    filter: drop-shadow(0 0 14px #F59E0B) drop-shadow(0 -10px 22px #DC2626);
   }
 }
 
@@ -275,7 +352,7 @@
     transform: translateY(0px) rotate(0deg);
   }
   50% {
-    transform: translateY(-10px) rotate(1.5deg);
+    transform: translateY(-8px) rotate(1.5deg);
   }
 }
 
@@ -294,18 +371,12 @@
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, var(--theme-accent-gold) 0%, var(--theme-text-cream) 50%, var(--theme-accent-gold) 100%);
+  background: linear-gradient(90deg, var(--theme-accent-gold) 0%, var(--theme-accent-secondary) 50%, var(--theme-accent-gold) 100%);
   background-size: 200% auto;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   animation: goldShimmer 4s linear infinite;
-}
-
-/* Traditional Rangoli / Toran Pattern Border */
-.toran-pattern {
-  background-image: radial-gradient(circle at 10px 10px, var(--theme-accent-gold) 2px, transparent 2px);
-  background-size: 20px 20px;
 }
 
 /* Custom Scrollbar */
@@ -317,12 +388,11 @@
   background: var(--theme-bg-main);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--theme-bg-card);
-  border: 1px solid var(--theme-border-gold);
+  background: color-mix(in srgb, var(--theme-accent-gold) 35%, transparent);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--theme-accent-secondary);
+  background: var(--theme-accent-gold);
 }
 
 /* Accessible reduced motion */
