@@ -142,3 +142,4 @@ npm run preview
 This project is open source and available under the [MIT License](LICENSE).
 
 Crafted with love, lights, and festive spirit for Diwali worldwide! 🪔✨
+
